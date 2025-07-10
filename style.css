@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #000 60%, #00ff00 100%);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Header fixo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  padding: 20px;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ff00;
+}
+
+/* Seção SOBRE */
+.sobre {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.foto-container {
+  text-align: center;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.nome {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.descricao {
+  max-width: 500px;
+}
+
+.descricao h2 {
+  margin-bottom: 10px;
+}
+
+.descricao p {
+  line-height: 1.6;
+}
+
+/* Seção PROJETOS */
+.projetos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.projeto {
+  width: 180px;
+  height: 120px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ff00;
+}
+
+/* Footer simples */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: white;
+  background-color: transparent;
+}
+
+/* Efeito flutuar */
+@keyframes flutuar {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Responsivo básico */
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  .projetos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
