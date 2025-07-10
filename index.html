@@ -11,11 +11,15 @@
 <body>
 
     <header>
-        <nav>
+        <nav class="menu">
+            <div class="lang-switcher">
+                <img src="./img/icons8-brasil-48.png" alt="Português" id="pt-btn" class="flag" />
+                <img src="./img/icons8-usa-48.png" alt="English" id="en-btn" class="flag" />
+            </div>
             <ul>
-                <li><a href="#inicio">INÍCIO</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
-                <li><a href="#contato">CONTATOS</a></li>
+                <li><a href="#inicio" class="menu-link" data-pt="INÍCIO" data-en="HOME">INÍCIO</a></li>
+                <li><a href="#projetos" class="menu-link" data-pt="PROJETOS" data-en="PROJECTS">PROJETOS</a></li>
+                <li><a href="#contato" class="menu-link" data-pt="CONTATOS" data-en="CONTACT">CONTATOS</a></li>
             </ul>
         </nav>
     </header>
@@ -28,10 +32,11 @@
                 <p class="nome">RYAN DOS REIS</p>
             </div>
             <div class="descricao">
-                <h2>SOBRE</h2>
-                <p>
-                    Sou o Ryan, apaixonado por tecnologia e web design. Estou sempre buscando aprender e criar sites
-                    bonitos e funcionais para mostrar meus projetos e meu talento.
+                <h2 class="lang" data-pt="SOBRE" data-en="ABOUT">SOBRE</h2>
+                <p class="lang"
+                    data-pt="Sou o Ryan, apaixonado por tecnologia e web design. Estou sempre buscando aprender e criar sites bonitos e funcionais para mostrar meus projetos e meu talento."
+                    data-en="I'm Ryan, passionate about technology and web design. I'm always learning and building clean, functional websites to showcase my work and creativity.">
+                    Sou o Ryan, apaixonado por tecnologia e web design...
                 </p>
             </div>
         </section>
@@ -42,9 +47,7 @@
             <a href="#" class="projeto">PROJETO 3</a>
         </section>
 
-        <footer id="contato">
-            <p>Contato: seuemail@exemplo.com</p>
-        </footer>
+        
     </main>
 
 
@@ -53,13 +56,20 @@
     </section>
 
     <section class="skills-descricao">
-        <p>
-            Tenho conhecimento em <strong>HTML5</strong> para estruturar páginas, <strong>CSS3</strong> para deixá-las
-            bonitas e responsivas, e <strong>JavaScript</strong> para adicionar interatividade e dinamismo aos sites.
+        <p class="lang"
+            data-pt="Tenho conhecimento em HTML5 para estruturar páginas, CSS3 para deixá-las bonitas e responsivas, e JavaScript para adicionar interatividade e dinamismo aos sites."
+            data-en="I have experience with HTML5 for structure, CSS3 for beautiful responsive layouts, and JavaScript for interactivity and dynamic features.">
+            Tenho conhecimento em HTML5 para estruturar páginas...
         </p>
     </section>
 
-    <script src="script.js"></script>
+    <footer id="contato">
+            <p class="lang" data-pt="Contato: seuemail@exemplo.com" data-en="Contact: youremail@example.com">
+                Contato: seuemail@exemplo.com
+            </p>
+        </footer>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
