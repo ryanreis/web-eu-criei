@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #000 60%, #00ff00 100%);
+  background: radial-gradient(ellipse at bottom, #003300 0%, #000000 80%);
   color: white;
   scroll-behavior: smooth;
 }
@@ -50,9 +50,13 @@ nav a:hover {
   padding: 50px;
 }
 
-.foto-container {
+.foto-container img {
   text-align: center;
   animation: flutuar 3s ease-in-out infinite;
+}
+
+.foto-container {
+  text-align: center;
 }
 
 .foto {
@@ -114,6 +118,28 @@ footer {
   padding: 40px 0;
   color: white;
   background-color: transparent;
+}
+
+.icones-codigos {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.icones-codigos img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.skills-descricao {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 1.6;
+  color: #ccc;
 }
 
 /* Efeito flutuar */
