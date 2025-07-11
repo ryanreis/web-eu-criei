@@ -17,3 +17,20 @@ document.addEventListener("DOMContentLoaded", () => {
 // Eventos de clique nas bandeiras
 ptBtn.addEventListener('click', () => aplicarIdioma("pt"));
 enBtn.addEventListener('click', () => aplicarIdioma("en"));
+
+
+function enviarMensagem() {
+      const nome = document.getElementById('nome').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+
+      if (nome === '' || mensagem === '') {
+        alert('Por favor, preencha todos os campos.');
+        return;
+      }
+
+      const texto = 'Olá, meu nome é ' + nome + '. ' + mensagem;
+      const telefone = '5594984046320'; // <-- Coloca seu número com DDD AQUI
+      const link = 'https://wa.me/' + telefone + '?text=' + encodeURIComponent(texto);
+
+      window.open(link, '_blank');
+    }

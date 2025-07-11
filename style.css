@@ -193,6 +193,57 @@ footer {
 
 
 
+
+.caixa-contato {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1); /* transparente e esfumaçado */
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.caixa-contato h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.caixa-contato input,
+.caixa-contato textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  resize: none;
+  font-size: 14px;
+}
+
+.caixa-contato textarea {
+  height: 100px;
+}
+
+.caixa-contato button {
+  width: 100%;
+  background-color: #25D366;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.caixa-contato button:hover {
+  background-color: #1ebe5d;
+}
+
+
+
 /* Efeito flutuar */
 @keyframes flutuar {
   0% { transform: translateY(0px); }
