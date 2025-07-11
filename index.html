@@ -111,12 +111,17 @@
     </section>
 
     <div class="caixa-contato">
-        <h2>Fale comigo</h2>
+        <h2 class="lang" data-pt="Fale comigo" data-en="Contact me">Fale comigo</h2>
 
-        <input type="text" id="nome" placeholder="Seu nome">
-        <textarea id="mensagem" placeholder="Sua mensagem..."></textarea>
+        <input type="text" id="nome" placeholder="Seu nome" class="lang"
+       data-pt="Seu nome" data-en="Your name">
 
-        <button onclick="enviarMensagem()">Enviar no WhatsApp</button>
+        <textarea id="mensagem" placeholder="Sua mensagem..." class="lang" data-pt="Sua mensagem..."
+            data-en="Your message..."></textarea>
+
+        <button onclick="enviarMensagem()" class="lang" data-pt="Enviar no WhatsApp" data-en="Send on WhatsApp">
+            Enviar no WhatsApp
+        </button>
     </div>
 
     <footer id="contato">

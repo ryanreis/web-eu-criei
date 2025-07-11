@@ -5,10 +5,18 @@ const traducao = document.querySelectorAll('.lang');
 // Função que aplica o idioma
 function aplicarIdioma(idioma) {
   traducao.forEach(el => {
-    el.textContent = el.getAttribute('data-' + idioma);
+    const texto = el.getAttribute('data-' + idioma);
+    const tag = el.tagName.toLowerCase();
+
+    if (!texto) return;
+
+    if (tag === 'input' || tag === 'textarea') {
+      el.placeholder = texto;
+    } else {
+      el.textContent = texto;
+    }
   });
 }
-
 // Detecta idioma padrão ao carregar o site
 document.addEventListener("DOMContentLoaded", () => {
   aplicarIdioma("pt"); // ou "en" se quiser começar em inglês
